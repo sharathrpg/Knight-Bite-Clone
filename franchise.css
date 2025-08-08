@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    background: url(./Images/video-bg.png)no-repeat;
+    background-size: cover;
+    height: 122vh;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0px 60px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+}
+nav .logo{
+    /* background-color: red; */
+    width: 20%;
+    /* height: 15vh; */
+}
+nav img{
+    width: 100%;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap:2rem;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+}
+.container video{
+    min-height: 115vh;
+    min-width: 99vw;
+    margin-top: 0px;
+    position: absolute;
+    top:0px;
+    /* right: 0px; */
+    z-index: 1;
+}
+.bg{
+    height: 123vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.467);
+    position: absolute;
+    z-index: 2;
+}
+.head-content{
+    position: relative;
+    z-index: 4;
+    padding-top: 40vh;
+    width: 70vw;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    color: white;
+}
+.head-content div:nth-child(2){
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.head-content h1{
+    font-size: 3.5rem;
+    text-transform: capitalize;
+}
+.head-content h3{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+.head-content a{
+    background: hotpink;
+    text-decoration: none;
+    color: white;
+    padding: 15px 45px;
+    border-radius: 50px;
+}
+.mission{
+    margin:10vh auto;
+    text-align: center;
+}
+.mission h1{
+    font-size: 1.5rem;
+    padding-bottom: 5vh;
+}
+.mission div{
+    width: 40vw;
+    margin: auto;
+    padding: .5rem;
+}
+.divide{
+    width: 85vw;
+    height: 3px;
+    background-color:rgb(237, 55, 237);
+    margin: 0 auto 5vh auto;
+}
+.section-3 h1:first-child{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: vh;
+    margin-bottom: 5vh;
+}
+.benefit-sec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
+    padding: 4rem 6rem;
+}
+.benefit-sec div{
+    min-height: fit-content;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 20px;
+}
+.benefit-sec p{
+    font-size: 20px;
+}
+.section-4 h1{
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+.section-4 h4{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.section-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-4 div{
+    background: url(./Images/apply-grid.png) no-repeat;
+    height: 70vh;
+    width: 70vw;
+    background-position:center;
+    background-size: contain;
+}
+.section-4 a{
+    background: hotpink;
+    text-decoration: none;
+    color: white;
+    margin: 1.5rem;
+    padding: 15px 45px;
+    border-radius: 50px;
+}
+.footer h1{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+.foot-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding-bottom: 10vh;
+}
+.foot-sec div{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    gap:10px;
+}
+#img1{
+    transform: scale(.6);
+}
+#img3{
+    transform: scale(.8);
+}
+        .footerbar{
+    height: 8vh;
+    background:linear-gradient(90deg, #C77BF4 0%, #FF5672 100%);
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-size: large;
+}
+@media screen and (max-width:576px){ 
+     
+        nav{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 20px;
+        }
+        nav .logo{
+            width: 60%;
+            align-self: center;
+        }
+        .nav-links{
+            gap: 1rem;
+        }
+        .nav-links a{
+            font-size: large;
+        }
+        .container video{
+            display: none;
+        }
+        .head-content h1{
+            font-size: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+        .head-content h3{
+            font-size: .8rem;
+        }
+        .mission h1{
+            font-size: 1.2rem;
+        }
+        .mission div{
+            width: 90vw;
+            font-size: medium;
+        }
+        .section-3 h1:first-child{
+            font-size: larger;
+        }
+        .benefit-sec{
+           margin-bottom: 5vh;
+            padding: 0px;
+        }
+        .benefit-sec div{
+            width:155px;
+        }
+        .benefit-sec h1{
+            font-size: .7rem;
+        }
+        .benefit-sec p{
+            font-size: small;
+        }
+        .benefit-sec img{
+            height: 50px;
+            width:50px;
+        }
+        .section-4 div{
+          height: 300px;
+        }
+        .section-4 a{
+            margin-bottom: 1.5rem;
+            margin-top:.5rem;
+        }
+        .section-4 h1{
+            margin-top: -4vh;
+            font-size: 1.5rem;
+        }
+        .section-4 h4{
+            font-size: .7rem;
+        }
+        .footer h1{
+            font-size: 1rem;
+        }
+        .foot-sec{
+            /* padding: 1rem; */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+        .foot-sec span{
+            font-size: medium;
+        }
+        .foot-sec div:nth-child(2){
+            gap: 35px;
+        }
+        .footerbar{
+            font-size: medium;
+        }
+}

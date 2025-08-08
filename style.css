@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 24px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    background:url(./Images/app-link-background.svg)no-repeat center/cover;
+    height: 100vh;
+    /* width:100vw; */
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0px 60px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+}
+nav .logo{
+    /* background-color: red; */
+    width: 20%;
+    /* height: 15vh; */
+}
+nav img{
+    width: 100%;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap:2rem;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+}
+.header-content a{
+    text-decoration: none;
+    background-color: hotpink;
+    padding:15px 25px;
+    border-radius: .6rem;
+    color: white;
+}
+.header-content{
+    padding-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     color: white;
+     gap:1.5rem;
+     /* margin-top: 2rem; */
+    height: 100vh;
+}
+.header-content h1{
+    font-size:3.5rem;
+}
+.playstore img{
+    transition: all .5s ease-in-out;
+}
+.playstore img:hover{
+    transform: scale(.9);
+}
+img[alt="ios-store"]{
+    height: 2.5rem;
+}
+.playstore{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+.features h1{
+    text-align: center;
+    font-size: 3rem;
+    padding: 2rem;
+}
+.features{
+    padding: 2.5rem;
+    min-height: 50vh;
+}
+.inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap:1rem;
+    min-height: 40vh;
+}
+.inner img{
+    width:7rem;
+    margin-bottom: 2rem;;
+}
+.inner div{
+    padding: 1.5rem;
+    font-size: 24px;
+}
+.banner2{
+    background: url(./Images/banner-1-container4.webp) no-repeat center/cover;
+    height: 150vh;
+    align-content: center;
+}
+.banner2 h1{
+    color: white;
+    font-size: 5.5rem;
+    text-align: center;
+}
+.banner3{
+    background: url(./Images/banner-2\ -container-4.webp)no-repeat center/cover;
+    height: 130vh;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.banner3 h1{
+    color: white;
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 10vh;
+    
+}
+.banner3 div{
+
+    margin: 10vh auto;
+}
+.banner3 a{
+    text-decoration: none;
+    color: white;
+    border:1px solid white;
+    padding:.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 35px;
+}
+.connect h1{
+    text-align: center;
+    font-size: 2rem;
+}
+.connect{
+    /* background-color: aqua; */
+    padding: 2rem;
+}
+.connect h3{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.connect .grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap:2rem;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 3rem;
+    line-height: 2srem;
+}
+.email-section{
+    position: relative;
+    width: 80%;
+}
+.connect input{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 2rem;
+    border: 1px solid black;
+    outline: none;
+    width: 100%;
+}
+#email-btn{
+    height: 2.2rem;
+    position: absolute;
+    right: -1px;
+    bottom:-1px;
+}
+.d-flex{
+    display: flex;
+    gap: 1rem; 
+}
+.d-flex p{
+    padding: .5rem;
+}
+.quick-links a{
+    text-decoration: none;
+    color:black;
+    line-height: 2rem;
+}
+.footerbar{
+    height: 5vh;
+    background:linear-gradient(90deg, #C77BF4 0%, #FF5672 100%);
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-size: large;
+}
+@media (max-width:576px) {
+    *{
+        font-size: 20px;
+    }
+    header{
+         background:url(./Images/media-app-link.webp)no-repeat center/cover;
+         height: 100vh;
+    }
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 10px;
+    }
+    .nav-links{
+    gap:1.5rem;
+    }
+    nav .logo{
+        width: 50%;
+    }
+    .header-content h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .header-content{
+        margin-top: 0vh;
+        gap:2rem;
+    }
+    .inner{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 60px;
+    }
+    .banner2 h1{
+        font-size: 2rem;
+    }
+    .banner2{
+        height: 100vh;
+        background-position-x: 25%;
+        background-size: cover;
+    }
+    .banner3 h1{
+        font-size: 2rem;
+        margin-bottom: 10vh;
+    }
+    .banner3{
+        background-position-x: 25%;
+        height: 100vh;
+    }
+    .banner3 a{
+        font-size: large;
+    }
+    .connect .grid{
+        grid-template-columns: auto;
+        gap:3rem;
+        line-height: 2rem;
+    }
+    #email-btn{
+        right:-1px;
+        bottom:-1px;
+    }
+    .footerbar{
+        font-size: small;
+    }
+}
+
